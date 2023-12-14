@@ -173,8 +173,8 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   // Agregar tareas al planificador
-  	Scheduler_AddTask(sensHumedad, 1000);  // Leer humedad cada 100 ms
-  	Scheduler_AddTask(ReadDistancia, 2000);       // Leer distancia cada 500 ms
+  	Scheduler_AddTask(sensHumedad, 3000);  // Leer humedad cada 100 ms
+  	Scheduler_AddTask(ReadDistancia, 3000);       // Leer distancia cada 500 ms
   	Scheduler_AddTask(evaluar, 4000);     // Acciona de acuerdo a la logica difusa 1000 ms
   	Scheduler_AddTask(Serial, 5000);
   	Scheduler_AddTask(Error, 6000);   // alerta para manejo de fallo
